@@ -1,0 +1,12 @@
+typename: example # This should match the name of the folder where the block's files are stored.
+title: "Code Snippet" # The display name of the block as it will appear in the UI.
+description: "Share little bits of HTML code on your page." # A brief explanation of the block's functionality.
+icon: "bi bi-code-square" # The Bootstrap icon class used for the block's icon in the UI.
+custom_html: true # Set to 'true' if the block requires custom code within the display.blade.php file.
+ignore_container: true # When 'custom_html' is true, setting this to 'true' allows the block to render outside the default container div.
+
+# Include libraries that come preloaded
+include_libraries:
+  jquery: true
+  sweetalert: true
+  fontawesome: true # Always included by default

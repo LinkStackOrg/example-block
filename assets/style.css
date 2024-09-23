@@ -1,0 +1,241 @@
+figure {
+  margin: 0 auto !important;
+  max-width: 1000px !important;
+  display: block !important;
+  color: #9e9e9e !important;
+  border: 1px solid #111 !important;
+  border-radius: 3px !important;
+  background: rgb(22, 22, 22) !important;
+  margin-bottom: 1rem !important;
+}
+
+figure figcaption {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+
+  font-family: sans-serif !important;
+  padding: 5px 10px 4px 10px !important;
+  border-bottom: 1px solid #111 !important;
+  border-radius: 3px 3px 0 0 !important;
+  font-weight: bold !important;
+  font-variant: small-caps !important;
+  background: #111 !important;
+  color: #9e9e9e !important;
+}
+
+.cs-button-container {
+  display: flex;
+  gap: 10px;
+}
+.cs-download, .cs-copy {
+  padding: 5px 10px;
+  background-color: #777;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.numbers {
+   cursor: context-menu;
+   -webkit-user-select: none;
+	-moz-user-select: none;
+  -ms-user-select: none;
+	user-select: none;
+  box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+pre,
+pre * {
+  font: normal normal normal 1em/1.4 monaco, courier, monospace !important;
+}
+
+pre {
+  font-size: 0.8em !important;
+}
+
+pre,
+pre code,
+pre samp {
+  display: block !important;
+  margin: 0 !important;
+  cursor: text !important;
+  border: 0 !important;
+}
+
+pre code,
+pre samp {
+  /* enforce white-space for IE7 */
+  white-space: pre;
+  /* enforce word-wrap for mobile safari */
+  word-wrap: normal;
+  padding: 10px;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  overflow-x: auto;
+  scrollbar-color: #777 #111 !important;
+  box-shadow: inset 0 1px 0 1px rgba(0, 0, 0, 0.5);
+}
+
+
+/* additional focus rules to provide a visual cue */
+
+pre [contenteditable]:focus {
+  border-radius: 0 0 3px 0 !important;
+  background: #fff !important;
+  outline: none !important;
+  background: rgb(22, 22, 22) !important;
+  box-shadow: inset 0 1px 4px 1px rgba(0, 0, 0, 0.5) !important;
+}
+
+pre.line-numbers {
+  position: relative !important;
+}
+
+pre.line-numbers code,
+pre.line-numbers samp {
+  margin-left: 3em !important;
+  border-left: 1px solid #000 !important;
+}
+
+pre.line-numbers > div {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 0 0 0 3px;
+  overflow: hidden;
+  counter-reset: line;
+}
+
+pre.line-numbers > div > span {
+  display: block;
+  width: 2.5em;
+  padding: 0 0.5em 0 0;
+  text-align: right;
+  color: #777;
+  overflow: hidden;
+  counter-increment: line;
+}
+
+pre.line-numbers > div > span::before {
+  content: counter(line) !important;
+}
+
+pre.line-numbers > div > span:first-child {
+  margin-top: 10px !important;
+}
+
+pre.line-numbers > div > span:nth-child(odd) {
+  background: #111 !important;
+}
+
+@media print {
+  pre code {
+    overflow-x: visible;
+    white-space: pre-wrap;
+  }
+  pre.line-numbers div {
+    display: none;
+  }
+  pre.line-numbers > code,
+  pre.line-numbers > samp {
+    margin-left: 0;
+  }
+}
+
+code.hljs {
+    padding-top: 10px !important;
+}
+/* double-up the syntax elements for cross-browser RTF-keystroke support */
+
+pre b,
+pre strong {
+  font-weight: normal !important;
+  color: #039 !important;
+}
+
+pre u,
+pre u b,
+pre u strong {
+  text-decoration: none !important;
+  color: #083 !important;
+}
+
+pre i,
+pre em,
+pre i *,
+pre em *,
+pre i * *,
+pre em * * {
+  letter-spacing: -0.1em !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+  color: #c55 !important;
+}
+
+.hljs {
+  color: #a9b7c6;
+  background: rgb(22, 22, 22);
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet {
+  color: #FF8040;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-deletion {
+  color: #569CD6;
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link {
+  color: #FF8040;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #57A64A;
+}
+
+.hljs-meta {
+  color: #D2A8A1;
+}
+
+.hljs-string,
+.hljs-attribute,
+.hljs-addition {
+  color: #FF0000;
+}
+
+.hljs-section,
+.hljs-title,
+.hljs-type {
+  color: #ffc66d;
+}
+
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #e8bf6a;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
