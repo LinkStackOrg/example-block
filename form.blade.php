@@ -68,7 +68,7 @@
 <label class='form-label'>{{block_text('Snipped')}}</label>
 <span class='small text-muted'>{{block_text('Enter code in any language')}}</span>
 
-<figure>
+<figure style="margin:0!important;">
     <figcaption>
         {{block_text('Snipped')}}
         <div class="cs-button-container">
