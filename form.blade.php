@@ -1,4 +1,4 @@
-@php
+<?php
 
     /*
     |---------------------------------------------------------------------------
@@ -55,7 +55,7 @@
      *    - This page is styled using Bootstrap 5.
      */
 
-@endphp
+?>
 
 <script src="{{block_asset('assets/highlight.min.js')}}"></script>
 <link rel="stylesheet" href="{{block_asset('assets/style.css')}}">
@@ -75,11 +75,11 @@
             <div onclick="csHighlight()" class="cs-download"><i class="fa-solid fa-magnifying-glass"></i> {{block_text('Detect language')}}</div>
         </div>
     </figcaption>
-    @php
+    <?php
     // Use "??" operator to avoid variable not defined errors for custom variables
     // Example:
     // {{ $custom_variable ?? null }}
-    @endphp
+    ?>
     <pre><code id="cshljs" contenteditable="true" tabindex="0" spellcheck="false">{{ $snipped ?? null }}</code></pre>
 </figure>
 

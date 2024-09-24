@@ -1,4 +1,4 @@
-@php
+<?php
     
     /*
     |---------------------------------------------------------------------------
@@ -74,7 +74,7 @@
      *    </div>
      */
 
-@endphp
+?>
 
 
 {{-- Load assets only once and in the correct order using @once and @push directives. --}}
